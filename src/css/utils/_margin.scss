@@ -1,0 +1,34 @@
+.m-auto {
+  margin: auto;
+}
+
+.m {
+  @each $marginValue in $marginValues {
+    &-#{$marginValue} {
+      margin: #{$marginValue}px;
+    }
+  }
+  @each $marginValue in $marginValues {
+    &r-#{$marginValue} {
+      margin-right: #{$marginValue}px;
+    }
+  }
+
+  @each $marginValue in $marginValues {
+    &l-#{$marginValue} {
+      margin-left: #{$marginValue}px;
+    }
+  }
+
+  @each $marginValue in $marginValues {
+    &t-#{$marginValue} {
+      margin-top: #{$marginValue}px;
+    }
+  }
+
+  @each $marginValue in $marginValues {
+    &b-#{$marginValue} {
+      margin-bottom: #{$marginValue}px;
+    }
+  }
+}

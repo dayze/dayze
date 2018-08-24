@@ -1,0 +1,34 @@
+.p-auto {
+  padding: auto;
+}
+
+.p {
+  @each $paddingValue in $paddingValues {
+    &-#{$paddingValue} {
+      padding: #{$paddingValue}px;
+    }
+  }
+  @each $paddingValue in $paddingValues {
+    &r-#{$paddingValue} {
+      padding-right: #{$paddingValue}px;
+    }
+  }
+
+  @each $paddingValue in $paddingValues {
+    &l-#{$paddingValue} {
+      padding-left: #{$paddingValue}px;
+    }
+  }
+
+  @each $paddingValue in $paddingValues {
+    &t-#{$paddingValue} {
+      padding-top: #{$paddingValue}px;
+    }
+  }
+
+  @each $paddingValue in $paddingValues {
+    &b-#{$paddingValue} {
+      padding-bottom: #{$paddingValue}px;
+    }
+  }
+}
